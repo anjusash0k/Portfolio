@@ -1,0 +1,31 @@
+html, body {
+    overflow-x: hidden; /* This will prevent horizontal scrolling */
+  }
+  /* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  /* Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 100px; /* Width of the scrollbar */
+    height: 10px; /* Height for horizontal scrollbar */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #242323; /* Light gray background */
+    border-radius: 10px; /* Rounded edges */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #353434; /* Darker gray thumb */
+    border-radius: 10px; /* Rounded edges */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #2f2f2f; /* Darker on hover */
+  }
+}
